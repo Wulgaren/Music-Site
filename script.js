@@ -30,5 +30,5 @@ function playAudio(path) {
         if (!event.target.getAttribute("onclick")?.includes('playAudio')) {
             audio.pause();
         }
-    });
+    }, { once: true });
 }
