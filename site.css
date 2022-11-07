@@ -54,6 +54,7 @@ body {
     background-color: black;
     color: white;
     border-radius: 2rem;
+    padding: 15px;
 }
 
 .underline {
