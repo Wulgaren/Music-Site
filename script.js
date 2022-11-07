@@ -25,4 +25,10 @@ window.addEventListener("scroll", reveal);
 function playAudio(path) {
     let audio = new Audio(path);
     audio.play();
+
+    window.addEventListener("click", function(event) {
+        if (!event.target.getAttribute("onclick")?.includes('playAudio')) {
+            audio.pause();
+        }
+    });
 }
