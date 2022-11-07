@@ -2,7 +2,8 @@ body {
     background-color: antiquewhite;
 }
 
-.container .reveal {
+.container .reveal, 
+.container .first {
     background-color: black;
     box-shadow: 0 8px 54px rgba(14, 12, 12, 0.72);
     border-radius: 2rem;
@@ -56,9 +57,17 @@ body {
 }
 
 .underline {
-    cursor: pointer;
     display: inline-block;
     position: relative;  
+    cursor: pointer;
+}
+
+h3.underline {
+    cursor: default;
+}
+
+li.underline {
+    display: list-item;
 }
 
 .underline::after {

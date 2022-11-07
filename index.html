@@ -22,7 +22,7 @@
         <h1>Gatunki muzyki</h1>
     </header>
     <div class="container">
-        <div>
+        <div class="first">
             <h3 class="underline">Rock</h3>
             <p>
                 Gatunek muzyki rozrywkowej powstały w połowie XX wieku w Stanach Zjednoczonych (który wytworzył wokół
@@ -92,8 +92,9 @@
                 <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
-                            Najbardziej rozpoznawalnymi samplami (czyli fragmentu wcześniej dokonanego nagrania muzycznego) to <span class="underline" onclick="playAudio('./assets/Cowbell808.aif')">cowbell</span> i wokale rapowane wzięte z utworów podgatunku hip-hopowego "Memphis Rap".
-                            
+                            Najbardziej rozpoznawalnymi samplami (czyli fragmentu wcześniej dokonanego nagrania muzycznego) to 
+                            <span class="underline" onclick="playAudio('./assets/Cowbell808.aif')">cowbell</span> i wokale rapowane wzięte z utworów podgatunku hip-hopowego 
+                            <span class="underline" onclick="playAudio('./assets/MemphisRap.aif')">"Memphis Rap".</span>
                         </div>
                     </div>
                 </div>
@@ -128,6 +129,24 @@
                 <li>Dillistone</li>
                 <li>Dual Manner</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#houseModal">Więcej</button>
+            </div>
+
+            <div class="modal fade" id="houseModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            House jest znany z perkusji gdzie stopka (basowa część perkusji) uderza na każdą nutę i skoczne piano.
+                            <ul>
+                                <li class="underline" onclick="playAudio('./assets/housebeat.aif')">Perkusja</li>
+                                <li class="underline" onclick="playAudio('./assets/housepiano.aif')">Pianino</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="reveal">
@@ -145,6 +164,25 @@
                 <li>Bobby Caldwell</li>
                 <li>Miles Davis</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#jazzModal">Więcej</button>
+            </div>
+
+            <div class="modal fade" id="jazzModal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            Jazz jest najbardziej rozpoznawanalny dzięki użyciu atypowych akordów muzycznych zawierających więcej niż 3 nuty (podstawowe akordy składają się z 3 nut) i typowych dla tego gatunku progresji akordów (czyli sekwencji paru akordów, które zazwyczają tworzą całe utwory). Jazz jest rozpoznawalny także przez często używane w nim instrumenty, takie jak:
+                            <ul>
+                                <li class="underline" onclick="playAudio('./assets/JazzPiano.mp3')">Pianino</li>
+                                <li class="underline" onclick="playAudio('./assets/Sax.wav')">Saksofon</li>
+                                <li class="underline" onclick="playAudio('./assets/SnareBrush.wav')">"Pędzle" grane na werblach</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="reveal">
