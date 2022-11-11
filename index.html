@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="antiquewhite" />
-    <title>Gatunki muzyka</title>
+    <title>Gatunki muzyki</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="site.css">
     <script src="script.js"></script>
 </head>
@@ -35,6 +38,10 @@
                 <li>The Neighbourhood</li>
                 <li>Lovejoy</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rockModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
         </div>
 
         <div class="reveal">
@@ -50,6 +57,10 @@
                 <li>Lady Gaga</li>
                 <li>Harry Styles</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='popModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
         </div>
 
         <div class="reveal">
@@ -69,6 +80,10 @@
                 <li>Fergie</li>
                 <li>Tyler, The Creator</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rapModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
         </div>
 
         <div class="reveal">
@@ -84,19 +99,7 @@
             </ul>
 
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#phonkModal">Więcej</button>
-            </div>
-
-            <div class="modal fade" id="phonkModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            Najbardziej rozpoznawalnymi samplami (czyli fragmentu wcześniej dokonanego nagrania muzycznego) to 
-                            <span class="underline" onclick="playAudio('./assets/Cowbell808.aif')">cowbell</span> i wokale rapowane wzięte z utworów podgatunku hip-hopowego 
-                            <span class="underline" onclick="playAudio('./assets/MemphisRap.aif')">"Memphis Rap".</span>
-                        </div>
-                    </div>
-                </div>
+                <button id='phonkModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
             </div>
         </div>
 
@@ -130,21 +133,7 @@
             </ul>
 
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#houseModal">Więcej</button>
-            </div>
-
-            <div class="modal fade" id="houseModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            House jest znany z perkusji gdzie stopka (basowa część perkusji) uderza na każdą nutę i skoczne piano.
-                            <ul>
-                                <li class="underline" onclick="playAudio('./assets/housebeat.aif')">Perkusja</li>
-                                <li class="underline" onclick="playAudio('./assets/housepiano.aif')">Pianino</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <button id='houseModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
             </div>
         </div>
 
@@ -165,22 +154,7 @@
             </ul>
 
             <div class="d-flex justify-content-center">
-                <button type="button" class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#jazzModal">Więcej</button>
-            </div>
-
-            <div class="modal fade" id="jazzModal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body">
-                            Jazz jest najbardziej rozpoznawanalny dzięki użyciu atypowych akordów muzycznych zawierających więcej niż 3 nuty (podstawowe akordy składają się z 3 nut) i typowych dla tego gatunku progresji akordów (czyli sekwencji paru akordów, które zazwyczają tworzą całe utwory). Jazz jest rozpoznawalny także przez często używane w nim instrumenty, takie jak:
-                            <ul>
-                                <li class="underline" onclick="playAudio('./assets/JazzPiano.mp3')">Pianino</li>
-                                <li class="underline" onclick="playAudio('./assets/Sax.wav')">Saksofon</li>
-                                <li class="underline" onclick="playAudio('./assets/SnareBrush.wav')">"Pędzle" grane na werblach</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <button id='jazzModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
             </div>
         </div>
 
@@ -197,6 +171,10 @@
                 <li>Steve Lacy</li>
                 <li>Estelle</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rnbModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
         </div>
 
         <div class="reveal">
@@ -212,8 +190,22 @@
                 <li>Mac DeMarco</li>
                 <li>Sufjan Stevens</li>
             </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='indieModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
         </div>
+
+        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="modal-text"></div>
+                </div>
+            </div>
+        </div>
+
     </div>
+
     <footer class="footer fixed-bottom text-end">Wykonanie: Nikola Wojtyła</footer>
 </body>
 

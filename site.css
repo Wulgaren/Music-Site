@@ -2,6 +2,12 @@ body {
     background-color: antiquewhite;
 }
 
+footer {
+    background: black;
+    color: white;
+    padding: 5px 5px 5px 0;
+}
+
 .container .reveal, 
 .container .first {
     background-color: black;
@@ -12,6 +18,7 @@ body {
     margin-bottom: 50px;
 }
 
+/* klasy do chowania/pokazywania */
 .reveal {
     position: relative;
     opacity: 0;
@@ -26,6 +33,7 @@ body {
     animation: fade-out-left 1s ease-in;
 }
 
+/* animacja pokazywania */
 @keyframes fade-in-left {
     0% {
         transform: translateX(-100px);
@@ -38,6 +46,7 @@ body {
     }
 }
 
+/* animacja chowania */
 @keyframes fade-out-left {
     0% {
         transform: translateX(0);
@@ -57,6 +66,8 @@ body {
     padding: 15px;
 }
 
+
+/* podkreslnik na linkach i gatunkach */
 .underline {
     display: inline-block;
     position: relative;  
@@ -71,6 +82,7 @@ li.underline {
     display: list-item;
 }
 
+/* linia */
 .underline::after {
     content: '';
     position: absolute;
@@ -84,6 +96,7 @@ li.underline {
     transition: transform 0.25s ease-out;
 }
   
+/* linia na najezdzeniu myszka */
 .underline:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
